@@ -1,0 +1,45 @@
+{% extends "base.html.twig" %}
+{% block body %}
+	<header>
+		{% include "./inc/static_links.html.twig" %}
+	</header>
+	<main class="bg-s-lgt text-p-drk text-center pt-5">
+		<section>
+			<h1>Mes comptes, tout simplement !</h1>
+			<h2>Votre application de gestion du budget familliale.</h2>
+			<p>Que vous soyez plutôt cigale ou plutôt fourmi,<br/>
+				Nous vous fournissons tous les outils dont vous avez besoin<br/>
+				pour
+				<a href="#">
+					<h3>gérer simplement votre argent</h3>
+				</a>.</p>
+		</section>
+		<section>
+			<h2>Gérer, c'est anticiper !</h2>
+			<P>Cette application vous permet d'enregistrer vos dépenses dîtes "récurrentes".<br/>
+				Vous savez, les dépenses ou les revenus qui reviennent tous les mois :
+				<ul>
+					<li>Loyer</li>
+					<li>allocations</li>
+					<li>téléphone</li>
+					<li>etc...</li>
+				</ul>
+				Vous aurez ainsi la possibilité de mieux gérer vos dépenses<br/>
+				et une idée claire sur la manière de gérer votre budget.
+			</P>
+			<h2>Anticiper, c'est reprendre le contôle !</h2>
+			<p>Notre outil vous permet aussi de créer des comptes "virtuels" qui doivent être le reflet<br/>
+				de vos comptes bancaire. Vous avez maintenant une meilleure gestion de votre budget familliale.</p>
+		</section>
+		<section class="d-flex justify-content-around">
+			<div>
+				<p>Je suis nouveau ici.</p>
+				<button class="btn btn-primary">Je m'inscris</button>
+			</div>
+			<div>
+				<p>Je suis déjà inscrit</p>
+				<button class="btn btn-outline-primary">Je me connecte</button>
+			</div>
+		</section>
+	</main>
+{% endblock %}
