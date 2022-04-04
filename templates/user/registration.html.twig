@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	{{ parent() }}Inscription
+{% endblock %}
+{% block body %}
+	<header class="text-center mb-3 pb-3">
+		<img src="" alt="LOGO"/>
+		<h1 class="h3 mb-5 font-weight-normal">Veuillez saisir vos identifiants:</h1>
+	</header>
+	<main role="main" class="flex-shrink-0">
+		<section class="offset-sm-3 col-sm-6 offset-md-4 col-md-4">
+			{{ form_start(registerForm) }}
+
+			{{ form_row(registerForm.email) }}
+			{{ form_row(registerForm.password) }}
+
+			<button type="submit" class="btn btn-dark">S'inscrire</button>
+
+			{{ form_end(registerForm) }}
+		</section>
+		<section class="w-100 p-5 text-center">
+			<p>Si vous avez déjà un compte utilisateur, cliquez
+				<a href="{{path('app_login')}}">ICI</a>
+			</p>
+		</section>
+	</main>
+	<footer></footer>
+{% endblock %}
