@@ -27,4 +27,6 @@ $theme-colors: (
   s-drk: $s-drk,
 );
 @import "~bootstrap/scss/bootstrap";
-@import "./app.css";
+@import "./app.scss";
+
+

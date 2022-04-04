@@ -3,43 +3,53 @@
 	<header>
 		{% include "./inc/static_links.html.twig" %}
 	</header>
-	<main class="bg-s-lgt text-p-drk text-center pt-5">
-		<section>
-			<h1>Mes comptes, tout simplement !</h1>
+	<main class="text-center bg-s-lgt text-p-drk">
+		<section class="p-3">
+			<h1>Mes comptes, tout simplement&nbsp;!</h1>
 			<h2>Votre application de gestion du budget familliale.</h2>
-			<p>Que vous soyez plutôt cigale ou plutôt fourmi,<br/>
-				Nous vous fournissons tous les outils dont vous avez besoin<br/>
-				pour
+			<br />
+			<p>Que vous soyez plutôt radin, économe ou dépensié,<br/>
+				nous vous fournissons tous les outils dont vous avez besoin pour</p>
+			<br />
 				<a href="#">
-					<h3>gérer simplement votre argent</h3>
-				</a>.</p>
+					<h3>gérez simplement votre argent</h3>
+				</a>
 		</section>
-		<section>
-			<h2>Gérer, c'est anticiper !</h2>
-			<P>Cette application vous permet d'enregistrer vos dépenses dîtes "récurrentes".<br/>
-				Vous savez, les dépenses ou les revenus qui reviennent tous les mois :
-				<ul>
-					<li>Loyer</li>
-					<li>allocations</li>
-					<li>téléphone</li>
-					<li>etc...</li>
-				</ul>
-				Vous aurez ainsi la possibilité de mieux gérer vos dépenses<br/>
-				et une idée claire sur la manière de gérer votre budget.
-			</P>
-			<h2>Anticiper, c'est reprendre le contôle !</h2>
-			<p>Notre outil vous permet aussi de créer des comptes "virtuels" qui doivent être le reflet<br/>
-				de vos comptes bancaire. Vous avez maintenant une meilleure gestion de votre budget familliale.</p>
-		</section>
-		<section class="d-flex justify-content-around">
-			<div>
+		<section class="w-50 mx-auto pb-3 row justify-content-around">
+			<div class="col-6 p-3">
 				<p>Je suis nouveau ici.</p>
 				<button class="btn btn-primary">Je m'inscris</button>
 			</div>
-			<div>
+			<div class="col-6 p-3">
 				<p>Je suis déjà inscrit</p>
 				<button class="btn btn-outline-primary">Je me connecte</button>
 			</div>
+		</section>
+		<section class="w-100 bg-primary text-s-lgt p-5 d-lg-flex justify-content-around align-items-center">
+			<div class="col-lg-4 col-12 p-3">
+			<span class="material-icons fs-1">
+				pie_chart
+			</span>
+			<h2>Gérer, c'est anticiper&nbsp;!</h2>
+			<P>Enregistrez vos dépenses mensuelles dîtes "récurrentes", vos dépenses variables ou quotidennes.
+				Vous pourrez ainsi anticiper les imprévus.
+			</P>
+			</div>
+			<div class="col-lg-4 col-12 p-3">
+			<span class="material-icons fs-1">
+				explore
+			</span>
+			<h2>Anticiper, c'est décider&nbsp;!</h2>
+			<p>Créez des comptes "virtuels" qui seront le reflet de vos comptes bancaire.
+				Vous avez maintenant une meilleure gestion de votre budget familliale.</p>
+			</div>
+		</section>
+		<section class="text-center bg-primary text-s-lgt w-100 p-5">
+			<span class="material-icons fs-1">
+				accessibility_new
+			</span>
+			<h2>Accessibilité pour toutes et&nbsp;tous&nbsp;!</h2>
+			<p>Cette application a été pensée pour que chacun et chacune d'entre nous puisse l'utiliser sans aucune exception.</p>
 		</section>
 	</main>
 {% endblock %}
